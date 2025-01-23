@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.j-c-center {
+    justify-content: center;
+}
+
+.appear {
+    display: none;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.my-0 {
+    margin: 0px inherit;
+}
+
+.mx-0 {
+    margin: inherit 0px;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.mt-100 {
+    margin-top: 100px
+}
+
+.w-40 {
+    width: 40%;
+} 
+
+.right-5 {
+    position: absolute;
+    right: 5%;
+}
+
+.pic {
+    background-image: url("assets/download.avif");
+    background-attachment:scroll;
+    background-position: center;
+    background-size: cover;
+}
+.stretch {
+    background-size: cover;
+}
+
+.img-big {
+    width: 100%;
+    height: 600px;
+}
+
+.background-image {
+    z-index: -1;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.bg-t-dark {
+    background-color: rgba(0, 0, 0, 0.792);
+}
+
+.small {
+    font-size: 15px;
+}
+
+.big {
+    font-size: clamp(18px, 10vw, 30px);
+    margin: 0;
+    margin-left: -10px;
+    padding: 0;
+}
+
+.biggest {
+    font-size: clamp(16px, 25vw, 150px);
+    margin-top: -40px;
+    margin-left: -20px;
+    padding: 0;
+    display: inline-flex;
+}
+
+.square {
+    height: 30px;
+    padding: 0px 10px;
+    background-color: rgb(255, 234, 0);
+    margin: 5px;
+}
+.motto-container {
+    justify-self: end;
+}
+
+.icon {
+    position: relative;
+    top: 2px;
+    padding-top: 5px;
+    margin-right: -4px;
+    height: 22px;
+}
+
+/* .nav-item {
+    max-height: 40px;
+    font-size: small;
+    vertical-align: middle;
+    font-weight: bold;
+} */
+
+.icon-b {
+
+    padding-bottom: 2px;
+    height: 36px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.pos-1 {
+    margin-top: -20px;
+}
+
+.float-start {
+    padding-left: 80px;
+}
+
+.float-end {
+    margin-right: 140px;
+}
+
+.accuratenav {
+    position: sticky;
+    top: 0;
+    margin-top: -20px;
+    z-index: 3;
+    width: 90%;
+    left:10%;
+}
+
+.accuratenav li {
+    width: 180px;
+}
+
+.mobile-nav {
+    display: block;
+}
+
+.mobile-nav li {
+    width: 100%;
+}
+
+.expand {
+    width: 150px;
+    height: 70px;
+}
+
+.font-in-nav {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.width-80 {
+    width: 85%;
+    margin: auto;
+}
+
+.quick-wrap {
+    margin-left: 100px;
+}
+
+.quick-icons {
+    position: absolute;
+    z-index: 1;   
+    margin: 15px auto;
+}
+
+.quick-text {
+    z-index: 1;
+    margin-left: 70px;
+    padding: 10px;
+    width:605px;
+}
+
+.quick-text p {
+    width: 500px;
+}
+
+.quick-text h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.project-img-div {
+    float: left;
+}
+
+.project-img {
+    height: 200px;
+    width: 300px;
+    margin: 50px;
+}
+
+.project-img:hover {
+    filter: brightness(80%);
+    border: 10px solid yellow;
+    /* margin-left: 30px;
+    margin-right: 20px; */
+}
+
+.HireWork {
+    margin-top: 100px;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+
+.Hire {
+    height: 200px;
+    width: clamp(300px, 50vw, 700px);
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Hire h1, .Work h1 {
+    font-size: 50px;
+}
+
+.Hire:hover {
+    background-color: rgb(26, 26, 26);
+}
+
+.Work {
+    height: 200px;
+    width: clamp(320px, 50vw, 700px); 
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+}
+
+@media(max-width:770px){
+
+    body {
+        height: 100%;
+        width: 100%;
+        overflow-x: scroll;
+        margin-right: -50%;
+    }
+
+    .pic {
+        width: 100%;
+    }
+
+    .appear {
+        display: block;
+    }
+
+    .width-80 {
+        width: 90%;
+    }
+    .top-left, .top-right {
+        width: 100%;
+        float: none;
+        justify-self: center;
+    }
+
+
+    .motto-container {
+        justify-self: center;
+    }
+
+
+    .big {
+        margin: 0 auto;
+        margin-top: 25%;
+        margin-bottom: -30px;
+        margin-left: 10px;
+    }
+    .biggest {
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .small {
+        margin: 0 auto;
+        margin-left: 10px;
+        font-size: medium;
+    }
+
+    .quick-icons {
+        display:block;
+        position: static;
+        width: fit-content;
+        margin: 0 50%;
+    }
+    .quick-text {
+        padding: 20px;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .quick-wrap {
+        margin: 0;
+        
+    }
+
+    .quick-text p{
+        width: 250px;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    .Hire, .Work {
+        /* margin: 0; */
+        margin:50px;
+        width: 80%;
+        height: fit-content;
+    }
+
+    .Hire h1, .Work h1 {
+        font-size: 10vw;
+    }
+
+
+}
