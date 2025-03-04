@@ -249,6 +249,9 @@ body {
 
 @media(max-width:770px){
 
+    * {
+        overflow-x: hidden;
+    }
     body {
         height: 100%;
         width: 100%;
